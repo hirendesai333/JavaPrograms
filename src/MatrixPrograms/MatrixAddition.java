@@ -1,13 +1,14 @@
-// Addition of 2 metrice
+// Addition of 2 metric
 package MatrixPrograms;
 
-public class MatricesAddition {
+public class MatrixAddition {
 	//creating two metrics
 	static int[][] a = {
 			{1,2,3},//{a0,a1,a2}
 			{3,4,5},//{a3,a4,a5}
 			{1,4,5} //{a6,a7,a8}
 	};
+
 	static int[][] b = {
 			{1,2,3},
 			{3,4,5},
