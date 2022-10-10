@@ -1,5 +1,5 @@
 //2D Array
-package ArrayFoundation;
+package MatrixPrograms;
 
 public class MultidimensionalArray {
 	public static void main(String[] args) {
