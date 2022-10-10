@@ -40,13 +40,12 @@ public class PetersonNumber {
 		input = scanner.nextInt();
 
 		for (int i = 0; i < String.valueOf(input).length(); i++) {
-			// seperate the digits
+			// separate the digits
 			temp = Character.digit(String.valueOf(input).charAt(i), 10);
 			System.out.println("digit: " + temp);
 
 			sum += factorial(temp);
 			System.out.println("Sum: " + sum);
-			
 		}
 		
 		if(input==sum)
@@ -54,6 +53,5 @@ public class PetersonNumber {
 		else
 			System.out.println("it's not peterson number");
 
-		
 	}
 }

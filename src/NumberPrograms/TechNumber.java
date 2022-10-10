@@ -21,7 +21,7 @@ public class TechNumber {
 	
 	public static void main(String[] args) {
 		//declare vars
-		int input, sum=0, square=0, output=0, length, p1, p2; 
+		int input, sum=0, square=0, length, p1, p2;
 		String s1,s2;
 		
 		//init Scanner class
@@ -36,18 +36,6 @@ public class TechNumber {
 		if(length%2==0) {
 			System.out.println("it's Even Number");
 
-			//below will work only for 4 digits number divided into 2 parts 
-//			p1 = input / 100;
-//			p2 = input - p1 * 100;
-			
-			
-			//Secondary method to divide number into 2 parts which is not recommended
-//			s1 = temp.substring(0, length/2);
-//          s2 = temp.substring(length/2);
-//			
-//			p1 = Integer.parseInt(s1);
-//			p2 = Integer.parseInt(s2);	
-			
 			//Primary method to divide number into 2 parts
 			//determines the first half of the given number  
 			p1 = input % (int) Math.pow(10, length / 2);  

@@ -8,13 +8,12 @@
 package NumberPrograms;
 
 import java.util.*;
-
 public class KeithNumber {
 
 	// user-defined function that checks if the given number is Keith or not
 	static boolean isKeith(int x) {
 		// List stores all the digits of the X
-		ArrayList<Integer> terms = new ArrayList<Integer>();
+		ArrayList<Integer> terms = new ArrayList<>();
 		
 		// n denotes the number of digits
 		int temp = x, n = 0;

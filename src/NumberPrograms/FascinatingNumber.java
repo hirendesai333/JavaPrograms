@@ -30,7 +30,7 @@ public class FascinatingNumber {
 
 	public static void main(String[] args) {
 		// declare vars
-		int input, v1, v2, length = 0, freq = 0;
+		int input, v1, v2, length;
 		String concat = "";
 		boolean found = true;
 
@@ -51,10 +51,8 @@ public class FascinatingNumber {
 			System.out.println("Value 1 multiplied by 2: " + v1);
 			System.out.println("Value 2 multiplied by 3: " + v2);
 
-			concat = String.valueOf(input) + String.valueOf(v1) + String.valueOf(v2);
+			concat = input + String.valueOf(v1) + v2;
 			System.out.println("Concatenation " + concat);
-
-//			con = Integer.parseInt(concat);//not needed
 
 			// checks all digits from 1 to 9 are present or not
 			for (char c = '1'; c <= '9'; c++) {
@@ -64,7 +62,7 @@ public class FascinatingNumber {
 					char ch = concat.charAt(i);
 					// compares the character of concatstr with i
 					if (ch == c)
-						// incerments the count by 1 if the specified condition returns true
+						// increments the count by 1 if the specified condition returns true
 						count++;
 				}
 				// returns true if any of the condition returns true
@@ -80,33 +78,6 @@ public class FascinatingNumber {
 				System.out.println(input + " is not a fascinating number.");
 			
 		}//end of parent if condition
-
-		// own method but not working Nd no logic behind this.
-//			for(int i=1;i<=9;i++) {
-//				if(concat.charAt(i-1) == '1' ||
-//						concat.charAt(i-1) == '2' || 
-//								concat.charAt(i-1) == '3' || 
-//										concat.charAt(i-1) == '4' || 
-//												concat.charAt(i-1) == '5' || 
-//														concat.charAt(i-1) == '6' || 
-//																concat.charAt(i-1) =='7' || 
-//																		concat.charAt(i-1) == '8' || 
-//																		concat.charAt(i-1) == '9') {
-//					
-//					freq = i;
-//					System.out.println("Frequency: "+freq);
-//
-//					
-//					//code to check whether final obtainer result contains all the digits once
-//					System.out.println("Contains all the digits");
-//					
-//				}
-//				else
-//					System.out.println("does not Contains all the digits");
-//
-//			}
-//
-//		}else System.out.println("Please enter 3 or more digits number to continue");
 
 	}
 }
